@@ -1,1 +1,3 @@
-aboutController.js
+angular.controller('ArticlesCtrl', function ArticlesCtrl($scope){
+
+});
