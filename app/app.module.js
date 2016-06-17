@@ -1,1 +1,3 @@
-app.module.js
+angular.module('blog', [])
+
+;
