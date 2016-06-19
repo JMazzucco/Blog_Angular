@@ -1,5 +1,5 @@
 // app.js
-var app = angular.module('routerApp', ['ui.router']);
+var app = angular.module('blog', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -10,7 +10,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
-            templateUrl: 'partial-home.html'
+            templateUrl: 'partials/partial-home.html'
         })
 
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
