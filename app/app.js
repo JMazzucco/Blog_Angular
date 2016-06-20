@@ -1,4 +1,5 @@
 // app.js
+
 var app = angular.module('blog', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -34,7 +35,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		        views: {
 
 		            // the main template will be placed here (relatively named)
-		            '': { templateUrl: 'partials/partial-about.html' },
+		            '': { templateUrl: 'app/components/about/partial-about.html' },
 
 		            // the child views will be defined here (absolutely named)
 		            'columnOne@about': { template: 'Look I am a column!' },

@@ -1,5 +1,5 @@
 // let's define the scotch controller that we call up in the about state
-app.controller('scotchController', function($scope) {
+app.controller('scotchController', function scotchController($scope) {
 
     $scope.message = 'test';
 
