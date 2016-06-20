@@ -41,7 +41,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		            // for column two, we'll define a separate controller
 		            'columnTwo@about': {
 		                templateUrl: 'app/components/about/table-data.html',
-		                controller: 'scotchController'
+		                controller: 'aboutController'
 		            }
 		        }
 

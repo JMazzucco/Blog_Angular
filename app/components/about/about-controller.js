@@ -1,10 +1,15 @@
 // let's define the scotch controller that we call up in the about state
 
-
-
-app.controller('scotchController', function scotchController($scope) {
+app.controller('aboutController', ['$scope', '$window', function aboutController($scope, $window) {
 
     $scope.message = 'test';
+
+
+    $scope.greeting = 'Welcome!';
+
+    $scope.doGreeting = function(greeting) {
+        $window.alert(greeting);
+    };
 
     $scope.scotches = [
         {
@@ -21,5 +26,5 @@ app.controller('scotchController', function scotchController($scope) {
         }
     ];
 
-});
+}]);
 
