@@ -18,9 +18,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		    .state('home.list', {
 		        url: '/list',
 		        templateUrl: 'app/components/home/partial-home-list.html',
-		        controller: function($scope) {
-		            $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-		        }
+		        controller: 'homeController'
 		    })
 
 		    // nested list with just some random string data
@@ -50,6 +48,3 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		    });
 
 		}); // closes $routerApp.config()
-
-
-
