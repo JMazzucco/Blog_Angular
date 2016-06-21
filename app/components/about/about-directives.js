@@ -3,6 +3,6 @@ app.directive("myDirective", function () {
       restrict: "E",
       transclude: true,
       controller: 'aboutController',
-      template: "<div style='background-color:red'>Directive {{message}}</div>",
+      templateUrl: "app/components/about/about-directive-template.html",
    };
 });
